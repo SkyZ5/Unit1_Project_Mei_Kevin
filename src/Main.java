@@ -26,11 +26,14 @@ public class Main {
         double tipPerPerson = totalTipAmount / numberOfPeople;
         double totalPerPerson = totalBillWithTip / numberOfPeople;
 
+        //Rounding
         double totalTipAmountRounded = Math.round(totalTipAmount * 100.0) / 100.0;
         double totalBillWithTipRounded = Math.round(totalBillWithTip * 100.0) / 100.0;
         double tipPerPersonRounded = Math.round(tipPerPerson * 100.0) / 100.0;
         double totalPerPersonRounded = Math.round(totalPerPerson * 100.0) / 100.0;
 
+
+        //Formating
         String totalTipAmountConverted = String.format("%.2f", totalTipAmountRounded);
         String totalBillWithTipConverted = String.format("%.2f", totalBillWithTipRounded);
         String tipPerPersonConverted = String.format("%.2f", tipPerPersonRounded);
